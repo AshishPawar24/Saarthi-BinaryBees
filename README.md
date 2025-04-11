@@ -80,11 +80,11 @@ To maintain secure and contextual support, relatives can log in and add:
 HOW TO RUN LOCALLY -
 1) Clone the Repository - git clone https://github.com/your-username/saarthi-ai.git
 cd saarthi-ai
-2) Install Dependencies
+2) Install Dependencies - 
 npm install
-3) Start the Development Server
+3) Start the Development Server - 
 npm run dev
-4) Open in Browser
+4) Open in Browser - 
 Navigate to the following URL in your browser:
 
 arduino
