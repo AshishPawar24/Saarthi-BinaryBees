@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saarthi - Your Digital Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="logo.png" alt="Saarthi Logo">
+                <h1>Saarthi</h1>
+            </div>
+            <div class="header-right">
+                <div class="status-badge">
+                    <i class="fas fa-check-circle"></i>
+                    <span>You are being monitored • Vitals: OK</span>
+                </div>
+                <div class="login-button">
+                    <a href="#" id="loginBtn">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Login</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>Caregiver Connect</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>Emergency Assist</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-smile-beam"></i>
+                        <span>Mood Booster</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="welcome-section animate-in">
+            <div class="welcome-text">
+                <h2>Welcome to Saarthi – Your Digital Companion</h2>
+                <p>We're here to help you stay connected, safe, and happy every day. Your caregivers are just a click away, and our intelligent system will remind you of all important appointments and medications.</p>
+                <p class="welcome-subtext">Saarthi provides 24/7 monitoring, emergency assistance, and personalized care solutions for seniors and those who need extra support.</p>
+                <div class="status-badge">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Your health status is good today</span>
+                </div>
+            </div>
+            <div class="welcome-image">
+                <img src="https://th.bing.com/th/id/OIP.4ZsK1l025HAsSUAhjLgITwHaE8?w=271&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Elderly person using tablet">
+            </div>
+        </section>
+
+        <section class="features-bar">
+            <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>24/7 Monitoring</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Easy to Use</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-lock"></i>
+                <span>Secure & Private</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-medkit"></i>
+                <span>Health Tracking</span>
+            </div>
+        </section>
+
+        <section class="quick-access">
+            <h3 class="section-title">Quick Access</h3>
+            <div class="cards-grid">
+                <div class="card emergency animate-in delay-1">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 class="card-title">Emergency</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Need immediate help? Press the emergency button to alert your caregivers and emergency contacts immediately.</p>
+                        <p class="card-details">Response time: <strong>Under 3 minutes</strong></p>
+                    </div>
+                    <button class="card-button emergency-button">
+                        <i class="fas fa-exclamation-circle"></i>
+                        Emergency Alert
+                    </button>
+                </div>
+
+                <div class="card reminders animate-in delay-2">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="card-title">Today's Reminders</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><i class="fas fa-pills"></i> Blood pressure medicine - 9:00 AM</li>
+                            <li><i class="fas fa-stethoscope"></i> Dr. Sharma appointment - 11:30 AM</li>
+                            <li><i class="fas fa-glass-water"></i> Drink water reminder - Every 2 hours</li>
+                            <li><i class="fas fa-walking"></i> Evening walk - 5:30 PM</li>
+                        </ul>
+                    </div>
+                    <button class="card-button">
+                        <i class="fas fa-list-check"></i>
+                        View All Reminders
+                    </button>
+                </div>
+
+                <div class="card mood animate-in delay-3">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3 class="card-title">Mood Booster</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="quote">"The best time to plant a tree was 20 years ago. The second best time is now."</p>
+                        <div class="activity-suggestion">
+                            <h4>Today's Suggestion</h4>
+                            <p><i class="fas fa-music"></i> Listen to your favorite song</p>
+                            <p><i class="fas fa-tree"></i> Take a short walk outside</p>
+                        </div>
+                    </div>
+                    <button class="card-button">
+                        <i class="fas fa-heart"></i>
+                        More Activities
+                    </button>
+                </div>
+
+                <div class="card connect animate-in delay-4">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="card-title">Connect Now</h3>
+                    </div>
+                    <div class="card-content">
+                        <p><i class="fas fa-user-circle"></i> <strong>Priya (Daughter)</strong><br>Last online 10 minutes ago</p>
+                        <p><i class="fas fa-user-nurse"></i> <strong>Rahul (Caregiver)</strong><br>Will visit today at 4:00 PM</p>
+                        <p class="connection-status"><i class="fas fa-signal"></i> 3 caregivers available now</p>
+                    </div>
+                    <button class="card-button">
+                        <i class="fas fa-video"></i>
+                        Call Family
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="health-dashboard">
+            <h3 class="section-title">Health Dashboard</h3>
+            <div class="dashboard-container">
+                <div class="dashboard-card">
+                    <div class="dashboard-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="dashboard-info">
+                        <h4>Heart Rate</h4>
+                        <p class="dashboard-value">72 BPM</p>
+                        <p class="dashboard-status normal">Normal</p>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <div class="dashboard-info">
+                        <h4>Steps Today</h4>
+                        <p class="dashboard-value">2,345</p>
+                        <p class="dashboard-status good">Good</p>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <div class="dashboard-info">
+                        <h4>Sleep Last Night</h4>
+                        <p class="dashboard-value">7.5 hrs</p>
+                        <p class="dashboard-status normal">Normal</p>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="dashboard-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="dashboard-info">
+                        <h4>Blood Pressure</h4>
+                        <p class="dashboard-value">120/80</p>
+                        <p class="dashboard-status normal">Normal</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="testimonials">
+        <div class="container">
+            <h3 class="section-title">What Users Say</h3>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="/api/placeholder/100/100" alt="User">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Saarthi has given me peace of mind knowing that my father is being monitored when I can't be there. The emergency system has already helped us twice."</p>
+                        <h4>Amrita Patel</h4>
+                        <p class="relation">Daughter of User</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="/api/placeholder/100/100" alt="User">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"The medication reminders are perfect for me. I never miss my pills now, and the mood boosters actually make me smile every day!"</p>
+                        <h4>Rajesh Kumar</h4>
+                        <p class="relation">Saarthi User</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h3>Ready to Experience the Best Care?</h3>
+                <p>Join thousands of satisfied users who feel safer and more connected with Saarthi</p>
+                <button class="cta-button">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Saarthi</h3>
+                <p>Your Digital Companion for Elderly Care</p>
+                <p>Always here for you, 24/7</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i> Help Line: 1800-123-4567</p>
+                <p><i class="fas fa-envelope"></i> support@saarthi.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Healthcare Street, New Delhi</p>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Data Security</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2025 Saarthi Healthcare Technologies. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Saarthi</h2>
+            <p>Please enter your credentials to access your account</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" placeholder="Enter your username or email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="form-group remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <button type="submit" class="login-submit">Login</button>
+                <div class="form-footer">
+                    <a href="#">Forgot Password?</a>
+                    <a href="#">New User? Register</a>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+    <script src="home.js"></script>
+</body>
+</html>

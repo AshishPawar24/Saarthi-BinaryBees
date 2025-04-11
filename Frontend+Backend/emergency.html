@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saarthi - Emergency Assist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="emergency.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Saarthi Logo" class="logo">
+            <h1 class="brand-name">Saarthi</h1>
+        </div>
+        <div class="status-container">
+            <div class="monitoring-status">
+                <i class="fas fa-circle-check"></i>
+                <span>You are being monitored • Vitals: OK</span>
+            </div>
+            <button class="login-btn">
+                <i class="fas fa-user"></i>
+                Login
+            </button>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="caregiver-connect.html" class="nav-item">
+                <i class="fas fa-hands-helping"></i>
+                <span>Caregiver Connect</span>
+            </a>
+            <a href="emergency-assist.html" class="nav-item active">
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Emergency Assist</span>
+            </a>
+            <a href="mood-booster.html" class="nav-item">
+                <i class="fas fa-smile"></i>
+                <span>Mood Booster</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="emergency-header">
+            <h2>Emergency Assistance</h2>
+            <p>Immediate help when you need it most</p>
+        </section>
+
+        <section class="emergency-actions">
+            <div class="emergency-card">
+                <button id="emergency-call-btn" class="emergency-btn">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call Emergency Services</span>
+                </button>
+                <p>Immediately connects you to local emergency services (911)</p>
+            </div>
+
+            <div class="emergency-card">
+                <button id="caregiver-alert-btn" class="emergency-btn">
+                    <i class="fas fa-bell"></i>
+                    <span>Alert Caregivers</span>
+                </button>
+                <p>Notifies all registered caregivers about your emergency</p>
+            </div>
+
+            <div class="emergency-card">
+                <button id="medical-info-btn" class="emergency-btn">
+                    <i class="fas fa-file-medical"></i>
+                    <span>Medical Information</span>
+                </button>
+                <p>Display critical medical information for emergency personnel</p>
+            </div>
+        </section>
+
+        <section class="emergency-contacts">
+            <h3>Emergency Contacts</h3>
+            <div class="contacts-list">
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <h4>Dr. Sarah Johnson</h4>
+                        <p><i class="fas fa-user-md"></i> Primary Physician</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    </div>
+                    <button class="call-btn"><i class="fas fa-phone"></i> Call</button>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <h4>Michael Wilson</h4>
+                        <p><i class="fas fa-user-friends"></i> Primary Caregiver</p>
+                        <p><i class="fas fa-phone"></i> (555) 987-6543</p>
+                    </div>
+                    <button class="call-btn"><i class="fas fa-phone"></i> Call</button>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <h4>City General Hospital</h4>
+                        <p><i class="fas fa-hospital"></i> Nearest Hospital</p>
+                        <p><i class="fas fa-phone"></i> (555) 789-0123</p>
+                    </div>
+                    <button class="call-btn"><i class="fas fa-phone"></i> Call</button>
+                </div>
+            </div>
+            <button class="add-contact-btn"><i class="fas fa-plus"></i> Add Emergency Contact</button>
+        </section>
+
+        <section class="emergency-instructions">
+            <h3>Emergency Instructions</h3>
+            <div class="instruction-cards">
+                <div class="instruction-card">
+                    <div class="card-header">
+                        <i class="fas fa-heartbeat"></i>
+                        <h4>Heart Attack</h4>
+                    </div>
+                    <ul>
+                        <li>Sit down and rest</li>
+                        <li>Take aspirin if available</li>
+                        <li>Loosen tight clothing</li>
+                        <li>Call emergency services immediately</li>
+                    </ul>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="card-header">
+                        <i class="fas fa-brain"></i>
+                        <h4>Stroke</h4>
+                    </div>
+                    <ul>
+                        <li>F - Face drooping</li>
+                        <li>A - Arm weakness</li>
+                        <li>S - Speech difficulty</li>
+                        <li>T - Time to call emergency services</li>
+                    </ul>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="card-header">
+                        <i class="fas fa-diagnoses"></i>
+                        <h4>Fall</h4>
+                    </div>
+                    <ul>
+                        <li>Stay calm and assess injuries</li>
+                        <li>Use emergency button if unable to get up</li>
+                        <li>Press "Alert Caregivers" button above</li>
+                        <li>If serious, call emergency services</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="emergency-log">
+            <h3>Recent Emergency Alerts</h3>
+            <div class="log-container">
+                <div class="log-entry resolved">
+                    <div class="log-date">APR 8, 2025</div>
+                    <div class="log-info">
+                        <h4>Fall Detected</h4>
+                        <p>Caregiver notified: Michael Wilson</p>
+                        <p>Resolution: Minor injury, medical attention not required</p>
+                    </div>
+                    <div class="log-status">Resolved</div>
+                </div>
+
+                <div class="log-entry resolved">
+                    <div class="log-date">MAR 22, 2025</div>
+                    <div class="log-info">
+                        <h4>Emergency Button Pressed</h4>
+                        <p>Caregiver notified: Michael Wilson</p>
+                        <p>Resolution: False alarm, device accidentally triggered</p>
+                    </div>
+                    <div class="log-status">Resolved</div>
+                </div>
+
+                <div class="log-entry resolved">
+                    <div class="log-date">FEB 15, 2025</div>
+                    <div class="log-info">
+                        <h4>Irregular Heart Rate</h4>
+                        <p>Caregiver notified: Michael Wilson, Dr. Sarah Johnson</p>
+                        <p>Resolution: Medication adjusted, follow-up scheduled</p>
+                    </div>
+                    <div class="log-status">Resolved</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Saarthi Digital Companion. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="emergency-modal" id="emergencyModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-exclamation-triangle"></i> Emergency Call</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>You are about to call emergency services (911).</p>
+                <p>This should only be used in case of a genuine emergency.</p>
+                <p>Do you want to proceed with the call?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="cancel-btn">Cancel</button>
+                <button class="confirm-btn">Yes, Call Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="emergency.js"></script>
+</body>
+</html>

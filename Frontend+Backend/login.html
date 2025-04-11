@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saarthi - Digital Companion for Seniors</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="info-panel">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Saarthi Logo">
+                    <h1>Saarthi</h1>
+                </div>
+                <p class="tagline">AI That Cares</p>
+            </div>
+            
+            <div class="info-content">
+                <h2>Welcome to Saarthi</h2>
+                <p>Your Digital Companion for senior care and monitoring</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>24/7 Monitoring</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ambulance"></i>
+                        <span>Emergency Assistance</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-user-md"></i>
+                        <span>Caregiver Connect</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-pills"></i>
+                        <span>Medication Reminders</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p>"Saarthi has given our family peace of mind knowing Dad is being monitored around the clock. The emergency response feature was a lifesaver last month!"</p>
+                    <div class="testimonial-author">
+                        <span>- Priya Sharma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Panel - Login Form -->
+        <div class="login-panel">
+            <div class="login-form-container">
+                <h2>Sign In</h2>
+                <p>Enter your credentials to access your Saarthi account</p>
+                
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                            <i class="fas fa-eye-slash toggle-password" id="togglePassword"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn-login">Sign In</button>
+                    
+                    <div class="register-prompt">
+                        <p>Don't have an account? <a href="#" id="registerLink">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Multi-step Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            
+            <!-- Progress indicator -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress" id="formProgress"></div>
+                </div>
+                <div class="steps">
+                    <div class="step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <span>Account</span>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-number">2</div>
+                        <span>Personal</span>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-number">3</div>
+                        <span>Medical</span>
+                    </div>
+                    <div class="step" data-step="4">
+                        <div class="step-number">4</div>
+                        <span>Care</span>
+                    </div>
+                </div>
+            </div>
+
+            <form id="registrationForm">
+                <!-- Step 1: Account Information -->
+                <div class="form-step" id="step1">
+                    <h2>Create Account</h2>
+                    <p>Set up an account to manage care for your loved one</p>
+                    
+                    <div class="form-group">
+                        <label for="regName">Your Full Name</label>
+                        <input type="text" id="regName" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="regEmail">Email</label>
+                        <input type="email" id="regEmail" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="regPhone">Phone Number</label>
+                        <input type="tel" id="regPhone" placeholder="Enter your phone number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="regPassword">Create Password</label>
+                        <input type="password" id="regPassword" placeholder="Create a strong password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="regConfirmPassword">Confirm Password</label>
+                        <input type="password" id="regConfirmPassword" placeholder="Confirm your password" required>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                    
+                    <div class="nav-buttons">
+                        <button type="button" class="btn-next" data-next="2">Next: Personal Details</button>
+                    </div>
+                </div>
+                
+                <!-- Step 2: Personal Information -->
+                <div class="form-step" id="step2" style="display:none;">
+                    <h2>Personal Details</h2>
+                    <p>Tell us more about your loved one</p>
+                    
+                    <div class="form-group">
+                        <label for="careRecipientName">Care Recipient's Full Name</label>
+                        <input type="text" id="careRecipientName" placeholder="Enter full name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" required>
+                        </div>
+                        
+                        <div class="form-group half">
+                            <label for="gender">Gender</label>
+                            <select id="gender" required>
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Home Address</label>
+                        <input type="text" id="address" placeholder="Enter complete address" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="livingArrangement">Living Arrangement</label>
+                            <select id="livingArrangement" required>
+                                <option value="">Select option</option>
+                                <option value="alone">Lives Alone</option>
+                                <option value="spouse">With Spouse</option>
+                                <option value="family">With Family</option>
+                                <option value="caregiver">With Caregiver</option>
+                                <option value="facility">Care Facility</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group half">
+                            <label for="primaryLanguage">Primary Language</label>
+                            <select id="primaryLanguage" required>
+                                <option value="">Select language</option>
+                                <option value="english">English</option>
+                                <option value="hindi">Hindi</option>
+                                <option value="tamil">Tamil</option>
+                                <option value="telugu">Telugu</option>
+                                <option value="bengali">Bengali</option>
+                                <option value="marathi">Marathi</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="emergencyContact">Emergency Contact Number</label>
+                        <input type="tel" id="emergencyContact" placeholder="Primary emergency contact" required>
+                    </div>
+                    
+                    <div class="nav-buttons">
+                        <button type="button" class="btn-back" data-back="1">Back</button>
+                        <button type="button" class="btn-next" data-next="3">Next: Medical History</button>
+                    </div>
+                </div>
+                
+                <!-- Step 3: Medical History -->
+                <div class="form-step" id="step3" style="display:none;">
+                    <h2>Medical History</h2>
+                    <p>This information helps our AI provide personalized care recommendations</p>
+                    
+                    <div class="form-group">
+                        <label>Chronic Conditions (select all that apply)</label>
+                        <div class="checkbox-grid">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="diabetes" name="conditions" value="diabetes">
+                                <label for="diabetes">Diabetes</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="hypertension" name="conditions" value="hypertension">
+                                <label for="hypertension">Hypertension</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="arthritis" name="conditions" value="arthritis">
+                                <label for="arthritis">Arthritis</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="heart-disease" name="conditions" value="heart-disease">
+                                <label for="heart-disease">Heart Disease</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="copd" name="conditions" value="copd">
+                                <label for="copd">COPD/Asthma</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="dementia" name="conditions" value="dementia">
+                                <label for="dementia">Dementia/Alzheimer's</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="parkinsons" name="conditions" value="parkinsons">
+                                <label for="parkinsons">Parkinson's</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="thyroid" name="conditions" value="thyroid">
+                                <label for="thyroid">Thyroid Disorder</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="otherConditions">Other Conditions</label>
+                            <input type="text" id="otherConditions" placeholder="Specify any other conditions">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="allergies">Allergies</label>
+                        <input type="text" id="allergies" placeholder="List any allergies (medications, food, etc.)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Current Medications</label>
+                        <div id="medications-container">
+                            <div class="medication-entry">
+                                <div class="form-row">
+                                    <div class="form-group half">
+                                        <input type="text" class="med-name" placeholder="Medication name" required>
+                                    </div>
+                                    <div class="form-group quarter">
+                                        <input type="text" class="med-dosage" placeholder="Dosage">
+                                    </div>
+                                    <div class="form-group quarter">
+                                        <select class="med-frequency">
+                                            <option value="daily">Daily</option>
+                                            <option value="twice">Twice daily</option>
+                                            <option value="morning">Morning</option>
+                                            <option value="evening">Evening</option>
+                                            <option value="weekly">Weekly</option>
+                                            <option value="as-needed">As needed</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="add-medication" class="btn-secondary">+ Add Another Medication</button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Mobility Status</label>
+                        <select id="mobility">
+                            <option value="">Select option</option>
+                            <option value="independent">Fully Independent</option>
+                            <option value="cane">Uses Cane/Walker</option>
+                            <option value="wheelchair-sometimes">Wheelchair Sometimes</option>
+                            <option value="wheelchair-always">Wheelchair Dependent</option>
+                            <option value="bedridden">Mostly Bedridden</option>
+                        </select>
+                    </div>
+                    
+                    <div class="nav-buttons">
+                        <button type="button" class="btn-back" data-back="2">Back</button>
+                        <button type="button" class="btn-next" data-next="4">Next: Care Details</button>
+                    </div>
+                </div>
+                
+                <!-- Step 4: Healthcare Team & Daily Care -->
+                <div class="form-step" id="step4" style="display:none;">
+                    <h2>Care Details</h2>
+                    <p>Information about healthcare providers and daily care needs</p>
+                    
+                    <div class="form-group">
+                        <label for="primaryDoctor">Primary Physician</label>
+                        <input type="text" id="primaryDoctor" placeholder="Doctor's name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="doctorContact">Doctor's Contact</label>
+                        <input type="tel" id="doctorContact" placeholder="Doctor's phone number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="hospital">Preferred Hospital</label>
+                        <input type="text" id="hospital" placeholder="Hospital name and location">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="insurance">Health Insurance Provider</label>
+                        <input type="text" id="insurance" placeholder="Insurance company name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Assistance Needed With (select all that apply)</label>
+                        <div class="checkbox-grid">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="medication-management" name="assistance" value="medication-management">
+                                <label for="medication-management">Medication Management</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="meal-preparation" name="assistance" value="meal-preparation">
+                                <label for="meal-preparation">Meal Preparation</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="bathing" name="assistance" value="bathing">
+                                <label for="bathing">Bathing</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="dressing" name="assistance" value="dressing">
+                                <label for="dressing">Dressing</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="toileting" name="assistance" value="toileting">
+                                <label for="toileting">Toileting</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="transfers" name="assistance" value="transfers">
+                                <label for="transfers">Transfers</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="housekeeping" name="assistance" value="housekeeping">
+                                <label for="housekeeping">Housekeeping</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="transportation" name="assistance" value="transportation">
+                                <label for="transportation">Transportation</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="hobbies">Interests & Hobbies</label>
+                        <textarea id="hobbies" placeholder="Activities your loved one enjoys" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="data-consent" required>
+                        <label for="data-consent">I consent to Saarthi storing and processing this health data to provide personalized care recommendations</label>
+                    </div>
+                    
+                    <div class="nav-buttons">
+                        <button type="button" class="btn-back" data-back="3">Back</button>
+                        <button type="submit" class="btn-submit">Complete Registration</button>
+                    </div>
+                </div>
+            </form>
+            
+            <p class="modal-footer">Already have an account? <a href="#" id="signInLink">Sign In</a></p>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
