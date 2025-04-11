@@ -77,6 +77,20 @@ To maintain secure and contextual support, relatives can log in and add:
 
 ---
 
+Clone the Repositorygit clone https://github.com/your-username/saarthi-ai.git
+cd saarthi-ai
+Install Dependencies
+npm install
+Start the Development Server
+npm run dev
+Open in Browser
+Navigate to the following URL in your browser:
+
+arduino
+Copy
+Edit
+http://localhost:5173
+
 ## 📁 Folder Structure
 
 ```bash
@@ -93,19 +107,6 @@ To maintain secure and contextual support, relatives can log in and add:
 └── README.md
 
 
-Clone the Repositorygit clone https://github.com/your-username/saarthi-ai.git
-cd saarthi-ai
-Install Dependencies
-npm install
-Start the Development Server
-npm run dev
-Open in Browser
-Navigate to the following URL in your browser:
-
-arduino
-Copy
-Edit
-http://localhost:5173
 
 
 
